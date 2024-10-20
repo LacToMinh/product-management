@@ -1,0 +1,18 @@
+mixin alert-success(time)
+  - if (message && message.success) // Kiểm tra nếu message tồn tại và có su
+    .message.info
+      div(
+        class="alert alert-success"
+        show-alert
+        data-time=time
+      ) #{message.success} <span close-alert>x</span>
+
+
+mixin alert-error(time)
+  - if (typeof message !== 'undefined' && message.error)
+    .message.info
+      div(
+        class="alert alert-danger"
+        show-alert
+        data-time=time
+      ) #{message.error} <span close-alert>x</span>
