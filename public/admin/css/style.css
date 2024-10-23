@@ -30,20 +30,20 @@
 
 /* Body */
 .body .sider {
-  width: 200px;
-  background: #212121;
+  width: 210px;
+  background: #1a1a1a;
   color: #fff;
   height: calc(100vh - 58px);
   position: fixed;
   top: 58px;
   left: 0;
-  padding: 20px;
+  padding: 20px 0;
   box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng để tạo chiều sâu cho sidebar */
   transition: background 0.3s ease;
 }
 
 .body .sider:hover {
-  background: #272626; /* Đổi màu nền khi hover */
+  background: #111111; /* Đổi màu nền khi hover */
 }
 
 .body .main {
@@ -68,14 +68,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Đường viền mờ nhẹ */
   transition: background 0.3s ease, color 0.3s ease, padding-left 0.3s ease; /* Hiệu ứng chuyển đổi */
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .sider .inner-menu ul li a:hover {
-  font-size: 18px;
-  font-weight: 600;
-  background: #FF6C37; 
-  color: black; 
+  /* background: #FF6C37;  */
+  color: #F5F543; 
   padding-left: 20px; /* Hiệu ứng trượt nhẹ khi hover */
   border-bottom: 1px solid #fff; /* Đổi màu đường viền khi hover */
 }
@@ -202,8 +200,9 @@ span.badge-danger {
 
 /* Vị trí sản phẩm */
 div.mb-4 b {
+  font-size: 16px;
   font-weight: 600;
-  color: #2980b9;
+  color: black;
 }
 
 /* Ảnh thu nhỏ sản phẩm */
@@ -237,15 +236,3 @@ button:hover {
   background-color: #2980b9;
 }
 
-/* Tối ưu cho mobile */
-@media (max-width: 768px) {
-  h1.mb-4 {
-    font-size: 1.5rem;
-  }
-  div.mb-4 {
-    font-size: 0.9rem;
-  }
-  img {
-    width: 80px;
-  }
-}

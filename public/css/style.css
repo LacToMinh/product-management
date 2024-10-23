@@ -283,3 +283,14 @@ body {
 /*# sourceMappingURL=style.css.map */
 
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none; /* Không gạch chân khi hover hoặc bấm */
+    color: inherit; /* Giữ nguyên màu khi hover hoặc bấm */
+}
